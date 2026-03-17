@@ -1,0 +1,51 @@
+  .catalog-intro{padding:80px 48px 48px;display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:24px}
+  .srv-cat{padding:64px 48px 64px}
+  .srv-cat.dark{background:var(--black);padding-top:64px;padding-bottom:64px}
+  .cat-top{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:40px;padding-bottom:20px;border-bottom:1px solid var(--gray-light)}
+  .srv-cat.dark .cat-top{border-bottom-color:rgba(255,255,255,.1)}
+  .cat-num{font-family:'Cormorant',serif;font-size:80px;font-weight:300;line-height:1;flex-shrink:0}
+  .cat-title{font-family:'Cormorant',serif;font-size:clamp(24px,2.8vw,40px);font-weight:400;line-height:1.2;margin-bottom:8px}
+  .cat-desc{font-size:13px;line-height:1.75;font-weight:300;max-width:560px}
+  .srv-cards{display:grid;gap:2px}
+  .srv-cards.c3{grid-template-columns:repeat(3,1fr)}
+  .srv-cards.c4{grid-template-columns:repeat(4,1fr)}
+  .srv-card{position:relative;overflow:hidden;aspect-ratio:3/4;display:block;text-decoration:none}
+  .srv-cards.c4 .srv-card{aspect-ratio:2/3}
+  .srv-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1s ease}
+  .srv-card:hover img{transform:scale(1.06)}
+  .srv-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.8) 0%,rgba(0,0,0,.05) 55%,transparent 100%);transition:background .4s}
+  .srv-card:hover .srv-overlay{background:linear-gradient(to top,rgba(0,0,0,.9) 0%,rgba(0,0,0,.15) 55%,transparent 100%)}
+  .srv-body{position:absolute;bottom:0;left:0;right:0;padding:22px 18px;z-index:2}
+  .srv-name{font-family:'Cormorant',serif;font-size:20px;font-weight:400;color:var(--white);line-height:1.2;margin-bottom:8px}
+  .srv-link{font-size:10px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.55);display:inline-flex;align-items:center;gap:8px;transition:color .3s,gap .3s}
+  .srv-link::after{content:'→'}
+  .srv-card:hover .srv-link{color:var(--white);gap:12px}
+  /* BOOKING FORM on services page */
+  .booking{padding:100px 48px;background:var(--white);display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+  .booking-h{font-family:'Cormorant',serif;font-size:clamp(32px,4vw,52px);font-weight:300;line-height:1.15;margin-top:12px}
+  .booking-h em{font-style:italic}
+  .booking-intro{font-size:14px;color:var(--gray-dark);line-height:1.85;margin:24px 0 40px;font-weight:300}
+  .contact-details{display:flex;flex-direction:column;gap:20px}
+  .contact-item{display:flex;gap:16px;align-items:flex-start}
+  .contact-icon{width:44px;height:44px;border:1px solid var(--gray-light);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:22px;line-height:1}
+  .contact-label{font-size:10px;font-weight:500;letter-spacing:.15em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:4px}
+  .contact-value{font-size:15px;color:var(--black);font-weight:300}
+  .contact-value a{color:inherit;text-decoration:none}
+  .contact-value a:hover{text-decoration:underline}
+  @media(max-width:1024px){
+    .catalog-intro{padding:60px 24px 36px}
+    .srv-cat{padding-left:24px;padding-right:24px}
+    .srv-cards.c3,.srv-cards.c4{grid-template-columns:repeat(2,1fr)}
+    .srv-card,.srv-cards.c4 .srv-card{aspect-ratio:3/4}
+    .booking{grid-template-columns:1fr;gap:48px;padding:64px 24px}
+  }
+  @media(max-width:768px){
+    .catalog-intro{padding:48px 20px 28px}
+    .srv-cat{padding-left:20px;padding-right:20px}
+    .srv-cat.dark{padding-top:48px;padding-bottom:48px}
+    .booking{padding:56px 20px}
+  }
+  @media(max-width:480px){
+    .srv-cards.c3,.srv-cards.c4{grid-template-columns:1fr}
+    .srv-card,.srv-cards.c4 .srv-card{aspect-ratio:4/3}
+  }

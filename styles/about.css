@@ -1,0 +1,58 @@
+  .mission{padding:100px 48px;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+  .mission-quote{font-family:'Cormorant',serif;font-size:clamp(20px,2.2vw,32px);font-weight:300;line-height:1.45;color:var(--black);margin-bottom:28px;font-style:italic}
+  .mission-text{font-size:14px;line-height:1.9;color:var(--gray-dark);font-weight:300;margin-bottom:14px}
+  .mission-image{overflow:hidden;aspect-ratio:4/5}
+  .mission-image img{width:100%;height:100%;object-fit:cover;transition:transform 1s ease;display:block}
+  .mission-image:hover img{transform:scale(1.04)}
+  .philosophy-sec{background:var(--black);padding:100px 48px;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+  .philosophy-img{overflow:hidden;aspect-ratio:3/4}
+  .philosophy-img img{width:100%;height:100%;object-fit:cover;transition:transform 1s ease;display:block}
+  .philosophy-img:hover img{transform:scale(1.04)}
+  .philosophy-accent{font-family:'Dancing Script',cursive;font-size:clamp(24px,2.8vw,40px);color:var(--white);line-height:1.3;margin:20px 0 28px}
+  .philosophy-txt{font-size:14px;color:var(--gray-mid);line-height:1.9;font-weight:300;margin-bottom:14px}
+  .interior{padding:80px 48px;background:var(--black)}
+  .interior-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin-top:40px}
+  .interior-item{overflow:hidden;aspect-ratio:3/4}
+  .interior-item img{width:100%;height:100%;object-fit:cover;transition:transform 1s ease;display:block}
+  .interior-item:hover img{transform:scale(1.05)}
+  .interior-text{font-size:14px;color:var(--gray-mid);line-height:1.9;font-weight:300;margin-top:28px;max-width:640px}
+  .advantages{padding:100px 48px}
+  .adv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:56px}
+  .adv-card{padding:48px 40px;background:#f0ede7;transition:background .1s}
+  .adv-card.dark{background:var(--black)}
+  .adv-card:hover{background:#e8e4dd}
+  .adv-card.dark:hover{background:#1a1a1a}
+  .adv-num{font-family:'Cormorant',serif;font-size:56px;font-weight:300;line-height:1;color:rgba(0,0,0,.18);margin-bottom:16px}
+  .adv-card.dark .adv-num{color:rgba(255,255,255,.1)}
+  .adv-title{font-family:'Cormorant',serif;font-size:22px;font-weight:400;color:var(--black);margin-bottom:12px}
+  .adv-card.dark .adv-title{color:var(--white)}
+  .adv-text{font-size:13px;color:var(--gray-dark);line-height:1.75;font-weight:300}
+  .adv-card.dark .adv-text{color:var(--gray-mid)}
+  .booking{padding:100px 48px;background:var(--white);display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+  .booking-h{font-family:'Cormorant',serif;font-size:clamp(32px,4vw,52px);font-weight:300;line-height:1.15;margin-top:12px}
+  .booking-h em{font-style:italic}
+  .booking-intro{font-size:14px;color:var(--gray-dark);line-height:1.85;margin:24px 0 40px;font-weight:300}
+  .contact-icon{width:44px;height:44px;border:1px solid var(--gray-light);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:22px;line-height:1}
+  .contact-label{font-size:10px;font-weight:500;letter-spacing:.15em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:4px}
+  .contact-value{font-size:15px;color:var(--black);font-weight:300}
+  .contact-value a{color:inherit;text-decoration:none}
+  .contact-value a:hover{text-decoration:underline}
+  @media(max-width:1024px){
+    .booking{grid-template-columns:1fr;gap:48px;padding:64px 24px}
+    .mission,.philosophy-sec{grid-template-columns:1fr;gap:48px}
+    .mission-image,.philosophy-img{aspect-ratio:4/3}
+    .interior{padding:64px 24px}
+    .interior-grid{grid-template-columns:1fr 1fr}
+    .advantages{padding:64px 24px}
+    .adv-grid{grid-template-columns:1fr 1fr}
+  }
+  @media(max-width:768px){
+    .mission,.philosophy-sec{padding:56px 20px}
+    .interior{padding:56px 20px}
+    .interior-item{aspect-ratio:3/4!important}
+    .interior-grid{grid-template-columns:1fr 1fr}
+    .interior-item{aspect-ratio:1/1}
+    .advantages{padding:56px 20px}
+    .adv-grid{grid-template-columns:1fr}
+    .adv-card{padding:36px 28px}
+  }

@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privé7 — Премиальный салон красоты в Краснодаре</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Montserrat:wght@300;400;500;600&family=Dancing+Script:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/main.css">
+<link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-follower" id="cursorFollower"></div>
+<div class="cookie-banner" id="cookieBanner">
+  <p class="cookie-text">Мы используем файлы cookie для улучшения вашего опыта. <a href="#" onclick="openPrivacy(event)">Политика конфиденциальности</a>.</p>
+  <div class="cookie-actions">
+    <button class="cookie-decline" onclick="declineCookies()">Отклонить</button>
+    <button class="cookie-accept" onclick="acceptCookies()">Принять</button>
+  </div>
+</div>
+<nav id="navbar">
+  <a href="index.html" class="nav-logo-link"><img src="assets/icons/logo_black.svg" alt="Privé7" class="nav-logo-img"/></a>
+  <ul class="nav-links"><li><a href="index.html" class="active">Главная</a></li><li><a href="about.html">О нас</a></li><li><a href="services.html">Услуги</a></li><li><a href="masters.html">Мастера</a></li><li><a href="https://prive7.shop">Цены</a></li><li><a href="news.html">Новости</a></li><li><a href="index.html#faq">FAQ</a></li></ul>
+  <a href="#booking" class="nav-cta">Записаться</a>
+  <div class="mobile-toggle" id="mobileToggle"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <ul class="mobile-menu-links"><li><a href="index.html" class="active">Главная</a></li><li><a href="about.html">О нас</a></li><li><a href="services.html">Услуги</a></li><li><a href="masters.html">Мастера</a></li><li><a href="https://prive7.shop">Цены</a></li><li><a href="news.html">Новости</a></li><li><a href="index.html#faq">FAQ</a></li></ul>
+  <div class="mobile-menu-bottom">
+    <a href="#booking" class="mobile-menu-cta">Записаться</a>
+    <div class="mobile-menu-contact"><a href="tel:+79897777977">+7 (989) 777-79-77</a>Краснодар, ул. Дальняя, 8<br>Ежедневно: 10:00–21:00</div>
+  </div>
+</div>
+
+<section class="hero">
+  <img class="hero-bg" src="assets/images/p04.png" alt="Privé7"/>
+  <div class="hero-overlay"></div>
+  <div class="hero-left">
+    <div class="hero-tag">Краснодар · Privé7</div>
+    <h1 class="hero-h1">Искусство <em>красоты</em></h1>
+    <div class="hero-accent">для тех, кто ценит совершенство</div>
+    <div class="hero-btns">
+      <a href="#booking" class="btn-primary">Записаться</a>
+      <a href="services.html" class="btn-outline">Наши услуги</a>
+    </div>
+  </div>
+</section>
+
+<section class="intro">
+  <div class="fade-up">
+    <div class="section-label">О студии</div>
+    <h2 class="intro-heading">Privé7 — пространство,<br>где рождается <em style="font-style:italic;font-family:'Cormorant',serif;">красота</em></h2>
+    <div class="intro-img-wrap">
+      <img src="assets/images/n07.png" alt=""/>
+    </div>
+  </div>
+  <div class="fade-up" style="transition-delay:.15s">
+    <p class="intro-text">Privé7 — это не просто салон красоты. Это пространство, где каждый визит становится ритуалом заботы о себе. Мы создаём образы с ювелирной точностью.</p>
+    <p class="intro-text">Каждый мастер — эксперт с многолетним опытом, который искренне любит своё дело. Только премиальные материалы, только индивидуальный подход.</p>
+    <div class="intro-stats">
+      <div><div class="stat-num" data-count="7" data-suffix="+">7+</div><div class="stat-label">Лет в индустрии</div></div>
+      <div><div class="stat-num" data-count="2000" data-suffix="+">2000+</div><div class="stat-label">Довольных клиентов</div></div>
+      <div><div class="stat-num" data-count="12">12</div><div class="stat-label">Мастеров экспертов</div></div>
+      <div><div class="stat-num" data-count="98" data-suffix="%">98%</div><div class="stat-label">Рекомендуют нас</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="services">
+  <div class="services-header fade-up">
+    <div>
+      <div class="section-label light">Направления</div>
+      <h2 class="section-heading light">Направления<br><em style="font-style:italic;font-family:'Cormorant',serif;">студии</em></h2>
+    </div>
+    <a href="services.html" class="btn-outline-light">Все услуги →</a>
+  </div>
+  <div class="services-list">
+    <div class="service-row fade-up">
+      <div class="service-content">
+        <div class="service-num">01</div>
+        <div>
+          <div class="service-title">Парикмахерский зал</div>
+          <p class="service-desc">Стрижки, окрашивание, укладки и уходы для волос от топ-стилистов. Работаем с профессиональными брендами Kevin Murphy и O&M.</p>
+          <a href="services.html" class="service-link">Подробнее →</a>
+        </div>
+      </div>
+      <div class="service-image"><img src="assets/images/n04.png" alt=""/></div>
+    </div>
+    <div class="service-row reverse fade-up">
+      <div class="service-content">
+        <div class="service-num">02</div>
+        <div>
+          <div class="service-title">Визаж и макияж</div>
+          <p class="service-desc">Вечерний, дневной, праздничный макияж. Создаём образы для любого случая — от деловой встречи до свадебного торжества.</p>
+          <a href="services.html" class="service-link">Подробнее →</a>
+        </div>
+      </div>
+      <div class="service-image"><img src="assets/images/n03.png" alt=""/></div>
+    </div>
+    <div class="service-row fade-up">
+      <div class="service-content">
+        <div class="service-num">03</div>
+        <div>
+          <div class="service-title">Косметология</div>
+          <p class="service-desc">Эстетическая, аппаратная и инъекционная косметология. SMAS-лифтинг, HydraFacial, Termage, уходы Margy's и QMS.</p>
+          <a href="services.html" class="service-link">Подробнее →</a>
+        </div>
+      </div>
+      <div class="service-image"><img src="assets/images/n05.png" alt=""/></div>
+    </div>
+    <div class="service-row reverse fade-up">
+      <div class="service-content">
+        <div class="service-num">04</div>
+        <div>
+          <div class="service-title">Ногтевой сервис</div>
+          <p class="service-desc">Маникюр, педикюр, покрытие и уход. Только безопасные материалы, только идеальный результат.</p>
+          <a href="services.html" class="service-link">Подробнее →</a>
+        </div>
+      </div>
+      <div class="service-image"><img src="assets/images/p14.png" alt=""/></div>
+    </div>
+  </div>
+</section>
+
+<section class="philosophy">
+  <div class="philosophy-image"><img src="assets/images/p05.png" alt=""/></div>
+  <div class="philosophy-content fade-up">
+    <div class="section-label light">Философия</div>
+    <h2 class="section-heading light" style="margin-bottom:16px">Подход нашего салона —<br><em style="font-style:italic;font-family:'Cormorant',serif;">комфорт и забота о клиентах</em></h2>
+    <div class="philosophy-quote">«Забота о вас — наш главный приоритет»</div>
+    <p class="philosophy-text">В Privé7 мы придерживаемся холистического подхода к красоте. Мы уверены, что истинная красота рождается из гармонии внутреннего состояния и внешнего образа. Каждый визит — это не просто процедура, это ритуал ухода за собой.</p>
+    <p class="philosophy-text">Мы создали пространство, где время замедляется, а забота о себе становится настоящим удовольствием. Только лучшие материалы, только проверенные техники, только искреннее внимание к каждому клиенту.</p>
+    <div style="margin-top:32px"><a href="about.html" class="btn-outline">Узнать больше</a></div>
+  </div>
+</section>
+
+<section class="masters">
+  <div class="masters-header fade-up">
+    <div>
+      <div class="section-label">Команда</div>
+      <h2 class="section-heading">Наши<br><em style="font-style:italic;font-family:'Cormorant',serif;">специалисты</em></h2>
+      <p style="font-size:14px;color:var(--gray-dark);font-weight:300;line-height:1.75;margin-top:16px;max-width:540px">Мы гордимся своей командой профессионалов. Каждый мастер — это эксперт с многолетним опытом, участник международных конкурсов и постоянный ученик в своём деле.</p>
+    </div>
+    <a href="masters.html" class="btn-dark">Все мастера</a>
+  </div>
+  <div class="masters-grid">
+    <div class="master-card fade-up"><img class="master-photo" src="assets/images/p12.png" alt=""/><div class="master-overlay"><div class="master-role">Визажист</div><div class="master-name">Анна Морозова</div></div></div>
+    <div class="master-card fade-up" style="transition-delay:.08s"><img class="master-photo" src="assets/images/n04.png" alt=""/><div class="master-overlay"><div class="master-role">Стилист</div><div class="master-name">Мария Светлова</div></div></div>
+    <div class="master-card fade-up" style="transition-delay:.16s"><img class="master-photo" src="assets/images/n05.png" alt=""/><div class="master-overlay"><div class="master-role">Косметолог</div><div class="master-name">Ксения Белова</div></div></div>
+    <div class="master-card fade-up" style="transition-delay:.24s"><img class="master-photo" src="assets/images/p15.png" alt=""/><div class="master-overlay"><div class="master-role">Барбер</div><div class="master-name">Алексей Дмитриев</div></div></div>
+  </div>
+</section>
+
+<section class="gallery">
+  <div style="padding:0 48px 48px">
+    <div class="section-label fade-up">Галерея</div>
+    <h2 class="section-heading fade-up">Наш <em style="font-style:italic;font-family:'Cormorant',serif;">салон</em></h2>
+  </div>
+  <div class="gallery-grid">
+    <div class="gallery-item g1"><img src="assets/images/p04.png" alt=""/></div>
+    <div class="gallery-item g2"><img src="assets/images/n03.png" alt=""/></div>
+    <div class="gallery-item g3"><img src="assets/images/p14.png" alt=""/></div>
+    <div class="gallery-item g4"><img src="assets/images/n04.png" alt=""/></div>
+    <div class="gallery-item g5"><img src="assets/images/p11.png" alt=""/></div>
+    <div class="gallery-item g6"><img src="assets/images/n05.png" alt=""/></div>
+    <div class="gallery-item g7"><img src="assets/images/p12.png" alt=""/></div>
+    <div class="gallery-item g8"><img src="assets/images/p05.png" alt=""/></div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="section-label fade-up">Отзывы</div>
+  <h2 class="section-heading fade-up">Что говорят<br><em style="font-style:italic;font-family:'Cormorant',serif;">клиенты</em></h2>
+  <div class="reviews-grid">
+    <div class="review-card fade-up">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">«Невероятный салон. Давно искала мастера, который понимает с полуслова — нашла здесь. Результат превзошёл все ожидания.»</p>
+      <div class="review-author">Анастасия К.</div>
+      <div class="review-service">Окрашивание, укладка</div>
+    </div>
+    <div class="review-card featured fade-up" style="transition-delay:.1s">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">«Лучший салон Краснодара без преувеличений. Атмосфера, сервис, качество — всё на высшем уровне. Хожу сюда уже 2 года.»</p>
+      <div class="review-author">Екатерина В.</div>
+      <div class="review-service">Косметология, маникюр</div>
+    </div>
+    <div class="review-card fade-up" style="transition-delay:.2s">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">«Записалась на свадебный макияж — осталась в полном восторге. Профессионализм мастеров на уровне Москвы, а может и выше.»</p>
+      <div class="review-author">Виктория М.</div>
+      <div class="review-service">Свадебный макияж</div>
+    </div>
+  </div>
+</section>
+
+<section class="news">
+  <div class="news-header fade-up">
+    <div>
+      <div class="section-label light">Актуально</div>
+      <h2 class="section-heading light">Новости<br><em style="font-style:italic;font-family:'Cormorant',serif;">и события</em></h2>
+    </div>
+    <a href="news.html" class="btn-outline-light">Все новости →</a>
+  </div>
+  <div class="news-grid">
+    <a href="article.html" class="news-card fade-up">
+      <div class="news-image"><img src="assets/images/p07.png" alt=""/></div>
+      <div class="news-body"><div class="news-date">12 марта 2025</div><div class="news-title">Весенние тренды окрашивания 2025</div><div class="news-excerpt">Открываем сезон яркими переходами и натуральными оттенками.</div></div>
+    </a>
+    <a href="article.html" class="news-card fade-up" style="transition-delay:.08s">
+      <div class="news-image"><img src="assets/images/n05.png" alt=""/></div>
+      <div class="news-body"><div class="news-date">28 февраля 2025</div><div class="news-title">Новая линейка уходовой косметики</div><div class="news-excerpt">Встречаем премиальные бренды Margy's и QMS в нашем меню.</div></div>
+    </a>
+    <a href="article.html" class="news-card fade-up" style="transition-delay:.16s">
+      <div class="news-image"><img src="assets/images/p09.png" alt=""/></div>
+      <div class="news-body"><div class="news-date">15 февраля 2025</div><div class="news-title">Запуск программы лояльности</div><div class="news-excerpt">Бонусы, приоритетная запись и эксклюзивные предложения для постоянных клиентов.</div></div>
+    </a>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="section-label fade-up">Вопросы</div>
+  <h2 class="section-heading fade-up">Часто задаваемые<br><em style="font-style:italic;font-family:'Cormorant',serif;">вопросы</em></h2>
+  <div class="faq-list fade-up" style="transition-delay:.1s">
+    <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">Как записаться на услугу?<span class="faq-arrow">›</span></div><div class="faq-answer">Вы можете записаться через форму на сайте, позвонить по телефону +7 (989) 777-79-77 или написать нам в мессенджер. Работаем ежедневно с 10:00 до 21:00.</div></div>
+    <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">Нужна ли предоплата?<span class="faq-arrow">›</span></div><div class="faq-answer">Предоплата не требуется для стандартных услуг. Для некоторых процедур (свадебный макияж, сложное окрашивание) возможно бронирование с небольшим депозитом.</div></div>
+    <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">Как отменить или перенести запись?<span class="faq-arrow">›</span></div><div class="faq-answer">Пожалуйста, сообщите нам об отмене или переносе не менее чем за 2 часа до визита. Позвоните по телефону или напишите в мессенджер.</div></div>
+    <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">Есть ли парковка рядом с салоном?<span class="faq-arrow">›</span></div><div class="faq-answer">Да, рядом с нашим салоном по адресу ул. Дальняя, 8 есть удобная бесплатная парковка. Также доступен общественный транспорт.</div></div>
+    <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">Работаете ли вы с детьми?<span class="faq-arrow">›</span></div><div class="faq-answer">Да, мы принимаем юных клиентов. Для детских стрижек и укладок просим записываться заранее, чтобы выделить достаточно времени.</div></div>
+  </div>
+</section>
+
+<section class="booking" id="booking">
+  <div class="booking-left fade-up">
+    <div class="section-label">Запись</div>
+    <h2 class="booking-h">Запишитесь<br><em>прямо сейчас</em></h2>
+    <p class="booking-intro">Оставьте заявку — администратор свяжется с вами для подтверждения в течение 30 минут.</p>
+    <div class="contact-details">
+      <div class="contact-item"><div class="contact-icon">✆</div><div><div class="contact-label">Телефон</div><div class="contact-value"><a href="tel:+79897777977">+7 (989) 777-79-77</a></div></div></div>
+      <div class="contact-item"><div class="contact-icon">⊙</div><div><div class="contact-label">Адрес</div><div class="contact-value">Краснодар, ул. Дальняя, 8</div></div></div>
+      <div class="contact-item"><div class="contact-icon">◷</div><div><div class="contact-label">График</div><div class="contact-value">Ежедневно: 10:00–21:00</div></div></div>
+    </div>
+  </div>
+  <div class="fade-up" style="transition-delay:.15s">
+    <div class="form-row">
+      <div class="form-group"><label class="form-label">Имя</label><input class="form-input" type="text" placeholder="Ваше имя"/></div>
+      <div class="form-group"><label class="form-label">Телефон</label><input class="form-input" type="tel" placeholder="+7 (___) ___-__-__"/></div>
+    </div>
+    <div class="form-group"><label class="form-label">Услуга</label>
+      <select class="form-select"><option value="" disabled selected>Выберите услугу</option>
+        <option>Макияж</option><option>Парикмахерский зал</option><option>Ногтевой сервис</option>
+        <option>Брови и ресницы</option><option>Лазерная эпиляция</option>
+        <option>Аппаратная косметология</option><option>Эстетическая косметология</option>
+        <option>Инъекционная косметология</option><option>Тело</option>
+      </select>
+    </div>
+    <div class="form-row">
+      <div class="form-group"><label class="form-label">Дата</label><input class="form-input" type="date"/></div>
+      <div class="form-group"><label class="form-label">Время</label>
+        <select class="form-select"><option value="" disabled selected>Время</option>
+          <option>10:00</option><option>11:00</option><option>12:00</option><option>13:00</option>
+          <option>14:00</option><option>15:00</option><option>16:00</option><option>17:00</option>
+          <option>18:00</option><option>19:00</option><option>20:00</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group"><label class="form-label">Пожелания</label><textarea class="form-textarea" placeholder="Опишите пожелания..."></textarea></div>
+    <button class="form-submit" onclick="submitForm(this)">Отправить заявку</button>
+    <p class="form-note">Нажимая кнопку, вы соглашаетесь с <a href="#" onclick="openPrivacy(event)">политикой конфиденциальности</a>.</p>
+  </div>
+</section>
+
+<div class="map-section">
+  <iframe src="https://maps.google.com/maps?q=Краснодар,+ул.+Дальняя,+8&z=16&output=embed" allowfullscreen loading="lazy"></iframe>
+  <div class="map-overlay">
+    <div class="map-overlay-title">Privé7 Краснодар</div>
+    <div class="map-overlay-text">ул. Дальняя, 8<br>Ежедневно: 10:00–21:00<br><br><a href="tel:+79897777977" style="color:var(--white)">+7 (989) 777-79-77</a></div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-top">
+    <div>
+      <a href="index.html" class="footer-logo-link"><img src="assets/icons/logo_white.svg" alt="Privé7" class="footer-logo-img"/></a>
+      <p class="footer-tagline">Премиальный салон красоты в сердце Краснодара. Создаём красоту, которая подчёркивает вашу уникальность.</p>
+      <div class="footer-social">
+        <a href="#" class="social-link"><img src="assets/icons/vk.svg" alt="VK"/></a>
+        <a href="#" class="social-link"><img src="assets/icons/tg.svg" alt="TG"/></a>
+        <a href="#" class="social-link"><img src="assets/icons/max.svg" alt="MAX"/></a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Услуги</div>
+      <ul class="footer-links">
+        <li><a href="services.html">Все услуги</a></li>
+        <li><a href="https://prive7.shop" target="_blank">Прайс-лист</a></li>
+        <li><a href="index.html#booking">Запись онлайн</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Студия</div>
+      <ul class="footer-links">
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="masters.html">Мастера</a></li>
+        <li><a href="news.html">Новости</a></li>
+        <li><a href="about.html">Вакансии</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Контакты</div>
+      <ul class="footer-links">
+        <li><a href="tel:+79897777977">+7 (989) 777-79-77</a></li>
+        <li><a href="#">Краснодар, ул. Дальняя, 8</a></li>
+        <li><a href="#">Ежедневно: 10:00–21:00</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2025 Privé7. Все права защищены.</div>
+    <div class="footer-legal">
+      <a href="#" onclick="openPrivacy(event)">Политика конфиденциальности</a>
+      <a href="#" onclick="openPrivacy(event)">Cookie-политика</a>
+    </div>
+  </div>
+</footer>
+<div id="privacyPopup"><div class="privacy-inner">
+  <button class="privacy-close" onclick="closePrivacy()">×</button>
+  <h2 class="privacy-h">Политика конфиденциальности</h2>
+  <p class="privacy-date">Последнее обновление: 1 января 2025</p>
+  <div class="privacy-body">
+    <p><strong>1. Общие положения</strong><br>Настоящая Политика определяет порядок обработки персональных данных пользователей сайта Privé7. Используя сайт, вы соглашаетесь с её условиями.</p>
+    <p><strong>2. Сбор данных</strong><br>Мы собираем: имя, телефон, email (при необходимости), дату записи. Данные собираются при заполнении форм.</p>
+    <p><strong>3. Цели обработки</strong><br>Подтверждение записи, информирование об акциях (с согласия), улучшение сервиса, соблюдение законодательства РФ.</p>
+    <p><strong>4. Хранение и защита</strong><br>Данные хранятся на защищённых серверах. Мы принимаем все необходимые меры против несанкционированного доступа.</p>
+    <p><strong>5. Передача третьим лицам</strong><br>Данные не передаются третьим лицам без вашего согласия, кроме случаев, предусмотренных законодательством РФ.</p>
+    <p><strong>6. Cookie</strong><br>Сайт использует cookie для улучшения пользовательского опыта. Можно отключить в настройках браузера.</p>
+    <p><strong>7. Ваши права</strong><br>Вы вправе запросить, исправить или удалить данные. Обратитесь: +7 (989) 777-79-77, Краснодар, ул. Дальняя, 8.</p>
+    <p style="margin-bottom:0"><strong>8. Контакты</strong><br>Privé7 Краснодар · ул. Дальняя, 8 · +7 (989) 777-79-77</p>
+  </div>
+</div></div>
+
+<script>
+// ── CURSOR ──────────────────────────────────────────
+(function(){
+  var c=document.getElementById('cursor'),f=document.getElementById('cursorFollower');
+  if(!c||!f)return;
+  var mx=0,my=0,fx=0,fy=0;
+  document.addEventListener('mousemove',function(e){
+    mx=e.clientX;my=e.clientY;
+    c.style.left=mx+'px';c.style.top=my+'px';
+    var el=document.elementFromPoint(mx,my);
+    if(el&&el!==c&&el!==f){
+      var bg=window.getComputedStyle(el).backgroundColor;
+      var dark=['rgb(10, 10, 10)','rgb(0, 0, 0)','rgb(17, 17, 17)','rgb(26, 26, 26)'].includes(bg);
+      f.style.borderColor=dark?'rgba(255,255,255,0.55)':'rgba(0,0,0,0.45)';
+    }
+  });
+  (function af(){fx+=(mx-fx)*.12;fy+=(my-fy)*.12;f.style.left=fx+'px';f.style.top=fy+'px';requestAnimationFrame(af);})();
+  document.querySelectorAll('a,button').forEach(function(el){
+    el.addEventListener('mouseenter',function(){c.classList.add('hover');f.classList.add('hover');});
+    el.addEventListener('mouseleave',function(){c.classList.remove('hover');f.classList.remove('hover');});
+  });
+})();
+
+// ── NAVBAR SCROLL ────────────────────────────────────
+var navbar=document.getElementById('navbar');
+window.addEventListener('scroll',function(){navbar.classList.toggle('scrolled',window.scrollY>60);});
+
+// ── FADE-UP ──────────────────────────────────────────
+var fo=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting)e.target.classList.add('visible');});},{threshold:0.07});
+document.querySelectorAll('.fade-up').forEach(function(el){fo.observe(el);});
+
+// ── MOBILE MENU ──────────────────────────────────────
+(function(){
+  var t=document.getElementById('mobileToggle'),m=document.getElementById('mobileMenu');
+  if(!t||!m)return;
+  function doToggle(){
+    var open=m.classList.contains('open');
+    m.classList.toggle('open',!open);
+    t.classList.toggle('open',!open);
+    document.body.style.overflow=open?'':'hidden';
+  }
+  t.addEventListener('click',doToggle);
+  t.addEventListener('touchend',function(e){e.preventDefault();doToggle();});
+  m.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click',function(){
+      m.classList.remove('open');t.classList.remove('open');
+      document.body.style.overflow='';
+    });
+  });
+})();
+
+// ── PRIVACY ──────────────────────────────────────────
+function openPrivacy(e){if(e)e.preventDefault();document.getElementById('privacyPopup').style.display='flex';}
+function closePrivacy(){document.getElementById('privacyPopup').style.display='none';}
+document.addEventListener('click',function(e){if(e.target===document.getElementById('privacyPopup'))closePrivacy();});
+
+// ── COOKIE ───────────────────────────────────────────
+function acceptCookies(){document.getElementById('cookieBanner').classList.add('hidden');localStorage.setItem('cookiesAccepted','true');}
+function declineCookies(){document.getElementById('cookieBanner').classList.add('hidden');localStorage.setItem('cookiesAccepted','false');}
+if(localStorage.getItem('cookiesAccepted'))document.getElementById('cookieBanner').classList.add('hidden');
+
+// ── FORM SUBMIT ──────────────────────────────────────
+function submitForm(btn){
+  var o=btn.textContent;btn.textContent='Отправляем...';btn.disabled=true;
+  setTimeout(function(){btn.textContent='✓ Заявка отправлена';btn.style.background='#2a2a2a';
+    setTimeout(function(){btn.textContent=o;btn.disabled=false;btn.style.background='';},3000);
+  },1200);
+}
+
+// ── FAQ ───────────────────────────────────────────────
+function toggleFaq(el){
+  var item=el.parentElement,isOpen=item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(function(i){i.classList.remove('open');});
+  if(!isOpen)item.classList.add('open');
+}
+</script>
+<script>
+
+// ── COUNTER ANIMATION ────────────────────────────────
+function animateCounter(el){
+  var target=parseInt(el.dataset.count),suffix=el.dataset.suffix||'',dur=1800,start=performance.now();
+  (function tick(now){
+    var p=Math.min((now-start)/dur,1),e=1-Math.pow(1-p,4);
+    el.textContent=Math.round(e*target).toLocaleString('ru-RU')+suffix;
+    if(p<1)requestAnimationFrame(tick);
+  })(start);
+}
+var statsBlock=document.querySelector('.intro-stats');
+if(statsBlock){
+  var cObs=new IntersectionObserver(function(entries){entries.forEach(function(e){
+    if(e.isIntersecting){e.target.querySelectorAll('.stat-num[data-count]').forEach(animateCounter);cObs.unobserve(e.target);}
+  },{threshold:.3});});
+  cObs.observe(statsBlock);
+}
+// ── SMOOTH SCROLL for #booking buttons ──
+document.querySelectorAll('a[href="#booking"]').forEach(function(a){
+  a.addEventListener('click',function(e){
+    var target=document.getElementById('booking');
+    if(!target)return;
+    e.preventDefault();
+    var start=window.pageYOffset,end=target.getBoundingClientRect().top+start,dur=600,t0=null;
+    function step(ts){if(!t0)t0=ts;var p=Math.min((ts-t0)/dur,1),ease=p<.5?2*p*p:1-Math.pow(-2*p+2,2)/2;window.scrollTo(0,start+end*ease);if(p<1)requestAnimationFrame(step);}
+    requestAnimationFrame(step);
+  });
+});
+// ── HASH SCROLL (for #faq, #booking links from other pages) ──
+setTimeout(function(){
+  var h=window.location.hash;
+  if(h&&h!=='#'){var t=document.querySelector(h);if(t)t.scrollIntoView({behavior:'smooth',block:'start'});}
+},200);
+
+</script>
+</body>
+</html>

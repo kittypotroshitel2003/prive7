@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>О нас — Privé7 Краснодар</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Montserrat:wght@300;400;500;600&family=Dancing+Script:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/main.css">
+<link rel="stylesheet" href="styles/about.css">
+</head>
+<body>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-follower" id="cursorFollower"></div>
+<div class="cookie-banner" id="cookieBanner">
+  <p class="cookie-text">Мы используем файлы cookie для улучшения вашего опыта. <a href="#" onclick="openPrivacy(event)">Политика конфиденциальности</a>.</p>
+  <div class="cookie-actions">
+    <button class="cookie-decline" onclick="declineCookies()">Отклонить</button>
+    <button class="cookie-accept" onclick="acceptCookies()">Принять</button>
+  </div>
+</div>
+<nav id="navbar">
+  <a href="index.html" class="nav-logo-link"><img src="assets/icons/logo_black.svg" alt="Privé7" class="nav-logo-img"/></a>
+  <ul class="nav-links"><li><a href="index.html">Главная</a></li><li><a href="about.html" class="active">О нас</a></li><li><a href="services.html">Услуги</a></li><li><a href="masters.html">Мастера</a></li><li><a href="https://prive7.shop">Цены</a></li><li><a href="news.html">Новости</a></li><li><a href="index.html#faq">FAQ</a></li></ul>
+  <a href="#booking" class="nav-cta">Записаться</a>
+  <div class="mobile-toggle" id="mobileToggle"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <ul class="mobile-menu-links"><li><a href="index.html">Главная</a></li><li><a href="about.html" class="active">О нас</a></li><li><a href="services.html">Услуги</a></li><li><a href="masters.html">Мастера</a></li><li><a href="https://prive7.shop">Цены</a></li><li><a href="news.html">Новости</a></li><li><a href="index.html#faq">FAQ</a></li></ul>
+  <div class="mobile-menu-bottom">
+    <a href="#booking" class="mobile-menu-cta">Записаться</a>
+    <div class="mobile-menu-contact"><a href="tel:+79897777977">+7 (989) 777-79-77</a>Краснодар, ул. Дальняя, 8<br>Ежедневно: 10:00–21:00</div>
+  </div>
+</div>
+
+<section class="page-hero">
+  <img class="page-hero-bg" src="assets/images/p04.png" alt=""/>
+  <div class="page-hero-content">
+    <div class="page-hero-label">О нас</div>
+    <h1 class="page-hero-h1"><em>Искусство</em><br>красоты</h1>
+  </div>
+</section>
+
+<section class="mission">
+  <div class="fade-up">
+    <div class="section-label">Миссия и ценности</div>
+    <h2 class="section-heading" style="margin-bottom:20px">Наша<br><em style="font-style:italic;font-family:'Cormorant',serif;">философия</em></h2>
+    <p class="mission-quote">«Стремление к совершенству в каждой детали, чтобы каждый гость чувствовал себя в атмосфере абсолютного комфорта и эстетики»</p>
+    <p class="mission-text">Privé7 — это не просто салон красоты. Это пространство, созданное для тех, кто ценит исключительный сервис, высокое мастерство и внимание к каждой детали. Мы верим, что истинная красота рождается из гармонии внутреннего и внешнего.</p>
+    <p class="mission-text">Каждый визит в Privé7 — это ритуал, а не просто процедура. Мы создаём образы, которые подчёркивают вашу уникальность с ювелирной точностью, используя только лучшие материалы и проверенные техники.</p>
+    <div style="margin-top:32px;display:flex;gap:16px;flex-wrap:wrap">
+      <a href="#booking" class="btn-dark">Записаться</a>
+      <a href="masters.html" class="btn-outline-dark">Наши мастера</a>
+    </div>
+  </div>
+  <div class="mission-image fade-up" style="transition-delay:.15s"><img src="assets/images/p05.png" alt="" style="object-position:center top"/></div>
+</section>
+
+<section class="interior">
+  <div class="fade-up">
+    <div class="section-label light">Интерьер</div>
+    <h2 class="section-heading light">Наше<br><em style="font-style:italic;font-family:'Cormorant',serif;">пространство</em></h2>
+  </div>
+  <div class="interior-grid">
+    <div class="interior-item fade-up"><img src="assets/images/n07.png" alt=""/></div>
+    <div class="interior-item fade-up" style="transition-delay:.08s"><img src="assets/images/n06.png" alt=""/></div>
+    <div class="interior-item fade-up" style="transition-delay:.16s"><img src="assets/images/p04.png" alt=""/></div>
+    <div class="interior-item fade-up" style="transition-delay:.24s"><img src="assets/images/p02.png" alt=""/></div>
+  </div>
+  <p class="interior-text fade-up">Интерьер Privé7 спроектирован так, чтобы создать ощущение уединения и элегантности. Натуральные материалы, приглушённое освещение и нейтральная цветовая палитра позволяют сосредоточиться на самом главном — на вас.</p>
+</section>
+
+<section class="advantages">
+  <div class="fade-up">
+    <div class="section-label">Почему мы</div>
+    <h2 class="section-heading">Наши<br><em style="font-style:italic;font-family:'Cormorant',serif;">преимущества</em></h2>
+  </div>
+  <div class="adv-grid">
+    <div class="adv-card fade-up"><div class="adv-num">01</div><div class="adv-title">Мастера мирового уровня</div><div class="adv-text">Сертифицированные специалисты с международным опытом. Ежегодное обучение у ведущих экспертов Европы и России.</div></div>
+    <div class="adv-card dark fade-up" style="transition-delay:.08s"><div class="adv-num">02</div><div class="adv-title">Премиальные материалы</div><div class="adv-text">Работаем с Margy's, QMS, Schrammek, Thalion, Candela и другими лидерами индустрии. Только лучшее для вашей кожи и волос.</div></div>
+    <div class="adv-card fade-up" style="transition-delay:.16s"><div class="adv-num">03</div><div class="adv-title">Персональный подход</div><div class="adv-text">Каждый визит начинается с консультации. Изучаем ваши особенности и пожелания, чтобы создать образ именно для вас.</div></div>
+    <div class="adv-card dark fade-up"><div class="adv-num">04</div><div class="adv-title">Уникальное пространство</div><div class="adv-text">Белый мрамор, зеркальные люстры, нейтральные тона — атмосфера, которая с первых минут располагает к расслаблению.</div></div>
+    <div class="adv-card fade-up" style="transition-delay:.08s"><div class="adv-num">05</div><div class="adv-title">Полный спектр услуг</div><div class="adv-text">От стрижки до аппаратной косметологии — всё в одном месте. Не нужно посещать несколько салонов.</div></div>
+    <div class="adv-card dark fade-up" style="transition-delay:.16s"><div class="adv-num">06</div><div class="adv-title">7+ лет репутации</div><div class="adv-text">Privé7 — часть федеральной сети премиальных салонов с филиалами в Москве, Петербурге, ОАЭ и других городах.</div></div>
+  </div>
+</section>
+
+<section class="masters-section">
+  <div class="masters-section-header fade-up">
+    <div><div class="section-label">Команда</div><h2 class="section-heading">Наши<br><em style="font-style:italic;font-family:'Cormorant',serif;">специалисты</em></h2></div>
+    <a href="masters.html" class="btn-dark">Все мастера</a>
+  </div>
+  <div class="masters-grid">
+    <div class="master-card fade-up"><img class="master-photo" src="assets/images/p12.png" alt="Анна Морозова"/><div class="master-overlay"><div class="master-role">Визажист</div><div class="master-name">Анна Морозова</div></div></div>
+<div class="master-card fade-up" style="transition-delay:0.08s"><img class="master-photo" src="assets/images/n04.png" alt="Мария Светлова"/><div class="master-overlay"><div class="master-role">Стилист-визажист</div><div class="master-name">Мария Светлова</div></div></div>
+<div class="master-card fade-up" style="transition-delay:0.16s"><img class="master-photo" src="assets/images/p11.png" alt="Елена Иванова"/><div class="master-overlay"><div class="master-role">Массажист</div><div class="master-name">Елена Иванова</div></div></div>
+<div class="master-card fade-up" style="transition-delay:0.24s"><img class="master-photo" src="assets/images/n05.png" alt="Ксения Белова"/><div class="master-overlay"><div class="master-role">Косметолог</div><div class="master-name">Ксения Белова</div></div></div>
+
+  </div>
+</section>
+
+<section class="join-section" id="join">
+  <div class="fade-up">
+    <div class="section-label light">Карьера</div>
+    <h2 class="join-title">Стать частью<br><em>команды</em></h2>
+    <p class="join-text">Мы всегда ищем талантливых специалистов, которые разделяют нашу философию. Стремление к совершенству и любовь к своему делу — главные требования.</p>
+    <p class="join-text" style="margin-top:12px">Отправьте резюме и портфолио — ответим в течение 2 рабочих дней.</p>
+  </div>
+  <div class="form-dark fade-up" style="transition-delay:.15s">
+    <div class="form-row">
+      <div class="form-group"><label class="form-label">Имя</label><input class="form-input" type="text" placeholder="Ваше имя"/></div>
+      <div class="form-group"><label class="form-label">Телефон</label><input class="form-input" type="tel" placeholder="+7 (___) ___-__-__"/></div>
+    </div>
+    <div class="form-group"><label class="form-label">Специализация</label>
+      <select class="form-select"><option value="" disabled selected>Выберите специализацию</option>
+        <option>Парикмахер / Стилист</option><option>Визажист</option>
+        <option>Мастер маникюра</option><option>Косметолог</option>
+        <option>Массажист</option><option>Администратор</option><option>Другое</option>
+      </select>
+    </div>
+    <div class="form-group"><label class="form-label">Опыт работы</label>
+      <select class="form-select"><option value="" disabled selected>Стаж</option>
+        <option>До 1 года</option><option>1–3 года</option><option>3–5 лет</option><option>Более 5 лет</option>
+      </select>
+    </div>
+    <div class="form-group"><label class="form-label">О себе / портфолио</label><textarea class="form-textarea" placeholder="Расскажите о себе или оставьте ссылку..."></textarea></div>
+    <button class="form-submit" onclick="submitForm(this)">Отправить заявку</button>
+    <p class="form-note" style="color:var(--gray-dark)">Нажимая кнопку, вы соглашаетесь с <a href="#" onclick="openPrivacy(event)" style="color:var(--white)">политикой конфиденциальности</a>.</p>
+  </div>
+</section>
+
+<section class="booking" id="booking">
+  <div class="fade-up">
+    <div class="section-label">Запись</div>
+    <h2 class="booking-h">Запишитесь<br><em>прямо сейчас</em></h2>
+    <p class="booking-intro">Оставьте заявку — администратор свяжется с вами для подтверждения в течение 30 минут.</p>
+    <div class="contact-details">
+      <div class="contact-item"><div class="contact-icon">✆</div><div><div class="contact-label">Телефон</div><div class="contact-value"><a href="tel:+79897777977">+7 (989) 777-79-77</a></div></div></div>
+      <div class="contact-item"><div class="contact-icon">⊙</div><div><div class="contact-label">Адрес</div><div class="contact-value">Краснодар, ул. Дальняя, 8</div></div></div>
+      <div class="contact-item"><div class="contact-icon">◷</div><div><div class="contact-label">График</div><div class="contact-value">Ежедневно: 10:00–21:00</div></div></div>
+    </div>
+  </div>
+  <div class="fade-up" style="transition-delay:.15s">
+    <div class="form-row">
+      <div class="form-group"><label class="form-label">Имя</label><input class="form-input" type="text" placeholder="Ваше имя"/></div>
+      <div class="form-group"><label class="form-label">Телефон</label><input class="form-input" type="tel" placeholder="+7 (___) ___-__-__"/></div>
+    </div>
+    <div class="form-group"><label class="form-label">Услуга</label>
+      <select class="form-select"><option value="" disabled selected>Выберите услугу</option>
+        <option>Макияж</option><option>Парикмахерский зал</option><option>Ногтевой сервис</option>
+        <option>Брови и ресницы</option><option>Лазерная эпиляция</option>
+        <option>Аппаратная косметология</option><option>Эстетическая косметология</option>
+        <option>Инъекционная косметология</option><option>Тело</option>
+      </select>
+    </div>
+    <div class="form-row">
+      <div class="form-group"><label class="form-label">Дата</label><input class="form-input" type="date"/></div>
+      <div class="form-group"><label class="form-label">Время</label>
+        <select class="form-select"><option value="" disabled selected>Время</option>
+          <option>10:00</option><option>11:00</option><option>12:00</option><option>13:00</option>
+          <option>14:00</option><option>15:00</option><option>16:00</option><option>17:00</option>
+          <option>18:00</option><option>19:00</option><option>20:00</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group"><label class="form-label">Пожелания</label><textarea class="form-textarea" placeholder="Опишите пожелания..."></textarea></div>
+    <button class="form-submit" onclick="submitForm(this)">Отправить заявку</button>
+    <p class="form-note">Нажимая кнопку, вы соглашаетесь с <a href="#" onclick="openPrivacy(event)">политикой конфиденциальности</a>.</p>
+  </div>
+</section>
+<footer>
+  <div class="footer-top">
+    <div>
+      <a href="index.html" class="footer-logo-link"><img src="assets/icons/logo_white.svg" alt="Privé7" class="footer-logo-img"/></a>
+      <p class="footer-tagline">Премиальный салон красоты в сердце Краснодара. Создаём красоту, которая подчёркивает вашу уникальность.</p>
+      <div class="footer-social">
+        <a href="#" class="social-link"><img src="assets/icons/vk.svg" alt="VK"/></a>
+        <a href="#" class="social-link"><img src="assets/icons/tg.svg" alt="TG"/></a>
+        <a href="#" class="social-link"><img src="assets/icons/max.svg" alt="MAX"/></a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Услуги</div>
+      <ul class="footer-links">
+        <li><a href="services.html">Все услуги</a></li>
+        <li><a href="https://prive7.shop" target="_blank">Прайс-лист</a></li>
+        <li><a href="index.html#booking">Запись онлайн</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Студия</div>
+      <ul class="footer-links">
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="masters.html">Мастера</a></li>
+        <li><a href="news.html">Новости</a></li>
+        <li><a href="about.html">Вакансии</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Контакты</div>
+      <ul class="footer-links">
+        <li><a href="tel:+79897777977">+7 (989) 777-79-77</a></li>
+        <li><a href="#">Краснодар, ул. Дальняя, 8</a></li>
+        <li><a href="#">Ежедневно: 10:00–21:00</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2025 Privé7. Все права защищены.</div>
+    <div class="footer-legal">
+      <a href="#" onclick="openPrivacy(event)">Политика конфиденциальности</a>
+      <a href="#" onclick="openPrivacy(event)">Cookie-политика</a>
+    </div>
+  </div>
+</footer>
+<div id="privacyPopup"><div class="privacy-inner">
+  <button class="privacy-close" onclick="closePrivacy()">×</button>
+  <h2 class="privacy-h">Политика конфиденциальности</h2>
+  <p class="privacy-date">Последнее обновление: 1 января 2025</p>
+  <div class="privacy-body">
+    <p><strong>1. Общие положения</strong><br>Настоящая Политика определяет порядок обработки персональных данных пользователей сайта Privé7. Используя сайт, вы соглашаетесь с её условиями.</p>
+    <p><strong>2. Сбор данных</strong><br>Мы собираем: имя, телефон, email (при необходимости), дату записи. Данные собираются при заполнении форм.</p>
+    <p><strong>3. Цели обработки</strong><br>Подтверждение записи, информирование об акциях (с согласия), улучшение сервиса, соблюдение законодательства РФ.</p>
+    <p><strong>4. Хранение и защита</strong><br>Данные хранятся на защищённых серверах. Мы принимаем все необходимые меры против несанкционированного доступа.</p>
+    <p><strong>5. Передача третьим лицам</strong><br>Данные не передаются третьим лицам без вашего согласия, кроме случаев, предусмотренных законодательством РФ.</p>
+    <p><strong>6. Cookie</strong><br>Сайт использует cookie для улучшения пользовательского опыта. Можно отключить в настройках браузера.</p>
+    <p><strong>7. Ваши права</strong><br>Вы вправе запросить, исправить или удалить данные. Обратитесь: +7 (989) 777-79-77, Краснодар, ул. Дальняя, 8.</p>
+    <p style="margin-bottom:0"><strong>8. Контакты</strong><br>Privé7 Краснодар · ул. Дальняя, 8 · +7 (989) 777-79-77</p>
+  </div>
+</div></div>
+
+<script>
+// ── CURSOR ──────────────────────────────────────────
+(function(){
+  var c=document.getElementById('cursor'),f=document.getElementById('cursorFollower');
+  if(!c||!f)return;
+  var mx=0,my=0,fx=0,fy=0;
+  document.addEventListener('mousemove',function(e){
+    mx=e.clientX;my=e.clientY;
+    c.style.left=mx+'px';c.style.top=my+'px';
+    var el=document.elementFromPoint(mx,my);
+    if(el&&el!==c&&el!==f){
+      var bg=window.getComputedStyle(el).backgroundColor;
+      var dark=['rgb(10, 10, 10)','rgb(0, 0, 0)','rgb(17, 17, 17)','rgb(26, 26, 26)'].includes(bg);
+      f.style.borderColor=dark?'rgba(255,255,255,0.55)':'rgba(0,0,0,0.45)';
+    }
+  });
+  (function af(){fx+=(mx-fx)*.12;fy+=(my-fy)*.12;f.style.left=fx+'px';f.style.top=fy+'px';requestAnimationFrame(af);})();
+  document.querySelectorAll('a,button').forEach(function(el){
+    el.addEventListener('mouseenter',function(){c.classList.add('hover');f.classList.add('hover');});
+    el.addEventListener('mouseleave',function(){c.classList.remove('hover');f.classList.remove('hover');});
+  });
+})();
+
+// ── NAVBAR SCROLL ────────────────────────────────────
+var navbar=document.getElementById('navbar');
+window.addEventListener('scroll',function(){navbar.classList.toggle('scrolled',window.scrollY>60);});
+
+// ── FADE-UP ──────────────────────────────────────────
+var fo=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting)e.target.classList.add('visible');});},{threshold:0.07});
+document.querySelectorAll('.fade-up').forEach(function(el){fo.observe(el);});
+
+// ── MOBILE MENU ──────────────────────────────────────
+(function(){
+  var t=document.getElementById('mobileToggle'),m=document.getElementById('mobileMenu');
+  if(!t||!m)return;
+  function doToggle(){
+    var open=m.classList.contains('open');
+    m.classList.toggle('open',!open);
+    t.classList.toggle('open',!open);
+    document.body.style.overflow=open?'':'hidden';
+  }
+  t.addEventListener('click',doToggle);
+  t.addEventListener('touchend',function(e){e.preventDefault();doToggle();});
+  m.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click',function(){
+      m.classList.remove('open');t.classList.remove('open');
+      document.body.style.overflow='';
+    });
+  });
+})();
+
+// ── PRIVACY ──────────────────────────────────────────
+function openPrivacy(e){if(e)e.preventDefault();document.getElementById('privacyPopup').style.display='flex';}
+function closePrivacy(){document.getElementById('privacyPopup').style.display='none';}
+document.addEventListener('click',function(e){if(e.target===document.getElementById('privacyPopup'))closePrivacy();});
+
+// ── COOKIE ───────────────────────────────────────────
+function acceptCookies(){document.getElementById('cookieBanner').classList.add('hidden');localStorage.setItem('cookiesAccepted','true');}
+function declineCookies(){document.getElementById('cookieBanner').classList.add('hidden');localStorage.setItem('cookiesAccepted','false');}
+if(localStorage.getItem('cookiesAccepted'))document.getElementById('cookieBanner').classList.add('hidden');
+
+// ── FORM SUBMIT ──────────────────────────────────────
+function submitForm(btn){
+  var o=btn.textContent;btn.textContent='Отправляем...';btn.disabled=true;
+  setTimeout(function(){btn.textContent='✓ Заявка отправлена';btn.style.background='#2a2a2a';
+    setTimeout(function(){btn.textContent=o;btn.disabled=false;btn.style.background='';},3000);
+  },1200);
+}
+
+// ── FAQ ───────────────────────────────────────────────
+function toggleFaq(el){
+  var item=el.parentElement,isOpen=item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(function(i){i.classList.remove('open');});
+  if(!isOpen)item.classList.add('open');
+}
+</script>
+</body>
+</html>
