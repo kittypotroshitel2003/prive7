@@ -1,4 +1,4 @@
-  .catalog-intro{padding:80px 48px 0px;display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:24px}
+  .catalog-intro{padding:80px 48px 0;display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:24px}
   .srv-cat{padding:64px 48px 64px}
   .srv-cat.dark{background:var(--black);padding-top:64px;padding-bottom:64px}
   .cat-top{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:40px;padding-bottom:20px;border-bottom:1px solid var(--gray-light)}
@@ -33,14 +33,14 @@
   .contact-value a{color:inherit;text-decoration:none}
   .contact-value a:hover{text-decoration:underline}
   @media(max-width:1024px){
-    .catalog-intro{padding:60px 24px 36px}
+    .catalog-intro{padding:60px 24px 0}
     .srv-cat{padding-left:24px;padding-right:24px}
     .srv-cards.c3,.srv-cards.c4{grid-template-columns:repeat(2,1fr)}
     .srv-card,.srv-cards.c4 .srv-card{aspect-ratio:3/4}
     .booking{grid-template-columns:1fr;gap:48px;padding:64px 24px}
   }
   @media(max-width:768px){
-    .catalog-intro{padding:48px 20px 28px}
+    .catalog-intro{padding:48px 20px 0}
     .srv-cat{padding-left:20px;padding-right:20px}
     .srv-cat.dark{padding-top:48px;padding-bottom:48px}
     .booking{padding:56px 20px}
